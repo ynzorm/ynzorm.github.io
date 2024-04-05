@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./output.css" rel="stylesheet">
+    <title>programming</title>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="header content-center bg-slate-700 border-collapse border border-slate-400">
+                <div class="text-center text-2xl text-green-100">
+                    Programming
+                </div>
+            </div>
+            <aside class="sidebar bg-gray-600 border-collapse border border-slate-400">
+                <ul class="list-inside text-center m-5">
+                    <li><a class="text-violet-500 text-xl underline hover:text-violet-300" href="index.html">home</a>
+                    </li>
+                    <li><a class="text-violet-500 text-xl underline hover:text-violet-300" href="form.html">survey</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="content bg-slate-800 border-collapse border border-slate-400 text-white">
+                <div class="m-5">
+                    <article>
+                        <p class="text-orange-500 text-xl">
+                            Please fill out our <a class="text-violet-700 underline hover:text-violet-400"
+                                href="form.html">survey</a>!
+                        </p>
+                    </article>
+
+                    <br>
+
+                    <details>
+                        <summary>languages comparison</summary>
+                        <span class="relative flex">
+                            <table class="table-auto border border-slate-500 shadow-gray-300 shadow-lg bg-slate-400">
+                                <caption class="border border-slate-500 bg-slate-400">Languages comparison
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th class="border border-slate-600"></th>
+                                        <th class="border border-slate-600">speed ranking</th>
+                                        <th class="border border-slate-600">popularity ranking</th>
+                                        <th class="border border-slate-600">creation year</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-violet-400">
+                                        <th class="border border-slate-600">Python</th>
+                                        <th class="border border-slate-700">3nd</th>
+                                        <th class="border border-slate-700">1st</th>
+                                        <th class="border border-slate-700">1991</th>
+                                    </tr>
+                                    <tr class="bg-sky-500">
+                                        <th class="border border-slate-600">C++</th>
+                                        <th class="border border-slate-700">1st</th>
+                                        <th class="border border-slate-700">2nd</th>
+                                        <th class="border border-slate-700">1985</th>
+                                    </tr>
+                                    <tr class="bg-green-400">
+                                        <th class="border border-slate-600">Java</th>
+                                        <th class="border border-slate-700">2nd</th>
+                                        <th class="border border-slate-700">3rd</th>
+                                        <th class="border border-slate-700">1995</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <span class="relative inline-flex right-2 bottom-1 rounded-full h-3 w-3 bg-sky-500"></span>
+                            <span
+                                class="animate-ping relative right-5 bottom-1 inline-flex h-3 w-3 rounded-full bg-sky-400 opacity-75"></span>
+                        </span>
+                    </details>
+
+
+
+                    <br><br>
+
+                    <map name="map">
+                        <area title="C++" shape="rect" coords="0,0,215,242" href="https://en.wikipedia.org/wiki/C%2B%2B"
+                            target="_blank" alt="C++" rel="noopener" />
+                        <area title="Java" shape="rect" coords="255,0,451,242"
+                            href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" alt="Java"
+                            rel="noopener" />
+                        <area title="Python" shape="rect" coords="491,0,707,242"
+                            href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"
+                            alt="Python" rel="noopener" />
+                    </map>
+                    <img usemap="#map" src="cjp.png" alt="Map with C++, Java and Python logos" />
+
+                    <br>
+
+                    <img src="programming.png" title="programing languages" width="20%" height="20%"
+                        alt="Graphic with programming languages logos">
+
+                    <br>
+
+                    <label for="progress-bar">project 2 progress:</label>
+                    <progress id="progress-bar" value="100" max="100">100%</progress>
+
+                    <br><br>
+
+                    <div class="flex flex-col">
+                        <form>
+                            <div>
+                                <label for="select">Which one is your favourite language?</label>
+                                <select title="select a language" id="select" name="language" required="true"
+                                    class="border-2 border-slate-600 text-black">
+                                    <option value="">choose an option</option>
+                                    <option value="python">Python</option>
+                                    <option value="c++">C++</option>
+                                    <option value="java">Java</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-row">
+                                <div class="flex-auto">
+                                    <input title="Tell us why" type="text" id="form" name="form" size="20" required
+                                        placeholder="Tell us why" minlength="5"
+                                        class="border-2 border-slate-600 text-black">
+                                </div>
+                                <div class="flex-none">
+                                    <button type="submit" title="button"
+                                        class="border-2 border-slate-600 bg-purple-300 hover:bg-purple-500  py-3 px-4 rounded-full">send</button>
+                                </div>
+                                <div class="flex-auto"></div>
+                                <div class="flex-auto"></div>
+                                <div class="flex-auto"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer text-center content-center bg-gray-300 border-collapse border border-slate-400">
+                <p class="opacity-55">
+                    created using tailwind
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
